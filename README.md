@@ -33,8 +33,31 @@ w18 | 2022/01/13 | 期末考週
 
 ## 作品完整說明
 1. TEST部分:  
+運用網路上寫好的cppunit涵式做結合 並參考網路上的helloworld測試單元 確認可以執行 目前只有做project裡面的涵式進行測試 日後會加上自己的專題code進行驗證
 
 2. 單元測試:  
+* test  
+
+        {
+            "tasks": [
+            {
+                "type": "cppbuild",
+                "label": "C/C++: g++.exe build active file",
+                "command": "C:/msys64/mingw64/bin/g++.exe",
+                "args": ["-g", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe"],
+                "options": {
+                "cwd": "${fileDirname}"
+                },
+                "problemMatcher": ["$gcc"],
+                "group": {
+                "kind": "build",
+                "isDefault": true
+                },
+                "detail": "compiler: C:/msys64/mingw64/bin/g++.exe"
+            }
+            ],
+            "version": "2.0.0"
+        }
 
 3. 版本管理:  
 ### 版本變更紀錄
@@ -58,11 +81,7 @@ w18 | 2022/01/13 | 期末考週
 主要管理者:陳淳
 次要管理者:徐仁鴻、劉怡謙、張凱証、柯泓吉
 
-5. 系統分析:  
-  
-
-
-6. 實作:  
+5. 實作:  
 
 在project資料夾裡面的資料是 軟體工程與演算法期末作業  
 
@@ -74,6 +93,11 @@ w18 | 2022/01/13 | 期末考週
 <img src="./picture/f1.png"/>
 可以從圖片知道編譯成功  
 
-7. 參考資料: 
+<img src="./picture/fetch.png"/>
+我將fork到的專案 再重新fetch讓兩個專案是同步的  
+
+<img src="./picture/f3.png"/>
+接著用 pull requese 將專案透過測試後合併
+
+6. 參考資料: 
 https://github.com/Ultimaker/CppUnit  
- 
